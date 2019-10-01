@@ -1,0 +1,24 @@
+using System;
+
+namespace Uppgift_Array
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Skriv 5 positiva hel tal");
+            int[] talen = new int[5];
+            for (int i = 0; i < 5; i++)
+            {
+                string inputString = Console.ReadLine();
+                talen[i] = int.Parse(inputString);
+            }
+            Console.WriteLine("Omvänt");
+
+            for (int i = 4; i >= 0; i--)
+            {
+                Console.WriteLine(talen[i] + " ");
+            }
+        }
+    }
+}
